@@ -1,4 +1,5 @@
-let city = prompt("Введите название города на английском", "Minsk")
+//let city = prompt("Введите название города на английском", "Minsk")
+let city = "Minsk"
 fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=40fe6ec370bfa747930d1e6e552f5e7d`)
 .then(function(resp) { return resp.json()})
 .then(function(data){
